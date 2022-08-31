@@ -1,0 +1,51 @@
+@keyframes fadeIn {    /*@keyframes tạo ra các animation chuyển động dạng frames (nhiều tấm ảnh chuyển động)*/
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;;
+    }
+}
+
+
+.icon{
+    background-image: url(./letter-i.png);
+    background-color: rgb(99, 217, 238);
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 26px;
+    top: 100px;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.infor {
+    display: none;
+    width: 600px;
+    position: absolute;
+    right: 0px;
+    background-color: sandybrown;
+    border-radius: 10px;
+    animation: fadeIn ease-in 0.15s;
+}
+
+.icon:hover .infor{
+    /* background-color: black; */
+    display: block;
+}
+
+.CN-box {
+    background-color: white;
+    color: black;
+    width: 180px;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+}
+
+.CN-icon {
+    width: 100%;
+    height: 100%;
+}
